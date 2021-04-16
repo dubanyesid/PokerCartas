@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Poker de Cartas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/index.css'>
+    <script src='js/cartas.js'></script>
+</head>
+<body>
+  <div class="seccion_1">
+    <main>
+    <section class="container--img">
+      <img src="./img/1.png" alt="" width="235" height="320">
+      <img src="./img/2.png" alt="" width="235" height="320">
+      <img src="./img/3.png" alt="" width="235" height="320">
+      <img src="./img/4.png" alt="" width="235" height="320">
+      <img src="./img/5.png" alt="" width="235" height="320">
+      <img src="./img/6.png" alt="" width="235" height="320">
+      <img src="./img/7.png" alt="" width="235" height="320">
+      <img src="./img/8.png" alt="" width="235" height="320">
+      <img src="./img/9.png" alt="" width="235" height="320">
+      <img src="./img/10.png" alt="" width="235" height="320">
+      <img src="./img/11.png" alt="" width="235" height="320">
+      <img src="./img/12.png" alt="" width="235" height="320">
+      <img src="./img/13.png" alt="" width="235" height="320">
+    </section>
+  </div>
+  <div class="seccion_2">  
+      <section class="container--table">
+      <button type="button" name="button" id="boton">Ver tabla</button>
+      <table id="tabla">
+        <tr>
+          <th>#</th>
+          <th>Carta</th>
+          <th>Cant</th>
+        </tr>
+      </table>
+    </section>
+    <div class="formulario">
+      <form>
+        <div class="mb-3" id="formulario">
+          <label for="numero" class="form-label">Número</label>
+          <input type="number" class="form-control" id="numero" />
+        </div>
+        <div class="mb-3">
+          <label for="carta" class="form-label">Carta</label>
+          <input type="text" class="form-control" id="carta" />
+        </div>
+
+        <button type="submit" id="guardar" class="btn btn-primary">
+          Guardar
+        </button>
+      </div>
+  </div>
+</body>
+</html>

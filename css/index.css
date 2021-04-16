@@ -1,0 +1,16 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  font-size: 1.6rem;
+}
+.seccion-2 {
+  width: 100%;
+  padding: 25px 0;
+  margin: 2px;
+}
