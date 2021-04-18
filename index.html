@@ -1,39 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Poker de Cartas</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel='stylesheet' type='text/css' media='screen' href='css/index.css'>
-    <script src='js/cartas.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+   
+    <title>Mazo de Cartas</title>
 </head>
-<section>
-  <h1>Lista de Cartas</h1>
-<table id="tabla_carta">
-  <tr>
-    <td>Numero</td>
-    <td>Carta</td>
-    <td>Cantidad</td>
-      </tr>
-</table>
-</section>
 
-<section><button  id="boton">Agregar</button></section>
+<body>
 
-<section>
-<form>
+    <header id="main-header">
+        <div class="logo-header">
+            <img id="logo"src="img/logo.png" alt="">
+        </div>
+    </header>
 
-      <label class="numero" for="numero">Numero</label>
-      <input type="text" name="numero" id="numero" maxlength="50" placeholder="Numero carta">
-  </br></br>
-      <label class="carta" for="carta">Carta</label>
-      <input type="text" name="carta" id="carta" maxlength="50" placeholder="Carta Agregar">
-  </br></br>
-      <input type="submit" name="submit" value="Guardar">
-  </form>
-</section>
+
+    <div class="contenedor">
+        <div class="row">
+            <div class="column">
+                <div id="grid" class="grid">
+
+                </div>
+            </div>
+            <div class="column">
+                <div>
+                    <table id="customers">
+                        <tr id="tr-head">
+                            <th>#</th>
+                            <th>Carta</th>
+                            <th>Cantidad</th>
+                        </tr>
+
+                    </table>
+                </div>
+                <div class="form">
+                    <form>
+                        <label for="numero">Número</label>
+                        <select id="numero" name="numero">
+                            <option disabled selected>Elija número</option>
+                        </select>
+
+                        <hr>
+
+                        <label for="descripcion">Carta</label>
+                        <input type="text" id="descripcion-carta" name="descripcion" placeholder="Descripción de la carta">
+
+                        <input id="guardar" type="button" value="Guardar" onclick="guardarCarta()">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+   
 </body>
+
+<script src="js/cartas.js"></script>
+<script src="js/listadoCartas.js"></script>
+
+
 </html>

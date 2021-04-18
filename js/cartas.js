@@ -1,29 +1,21 @@
-function cargarTabla (){
+function cargarCartas() {
+    const cartas = document.getElementById("grid");
 
-	const tabla = document.getElementById("tabla_carta");
- 	const tr = document.createElement('tr');
+    for (let i = 1; i < 14; i++) {
 
-     for (i=0; i<input.length; i++) {
+        const carta = document.createElement("div")
+        const img = document.createElement("img")
 
-        const tdNumero= document.createElement('td');
-            tdNumero.textContent = input[i].addEventListener;
-            tr.appendChild(tdNumero);
+        carta.id = "btn-carta"
+        carta.className = "btn-carta"
+        carta.setAttribute("data-carta", `${i}`)
+        img.className = `btn-carta carta-${i}`
+        img.src = `img/${i}.png`
 
-            const tdCarta = document.createElement('td');
-            tdCarta.textContent =input[i].addEventListener;
-            tr.appendChild(tdCarta);
-            
-            tabla.appendChild(tr);
+        carta.appendChild(img)
+
+        cartas.appendChild(carta)
     }
-    
 }
 
-
-function obtenerdatos(){
-    var url = "http://demo6497253.mockable.io/cartas";
-
-	fetch  (url)
-	    .then(response => response.json())
-		.then(data => generarTabla(data))
-	.catch(error => {});
-}
+cargarCartas();
